@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+@import url('https://fonts.cdnfonts.com/css/photograph-signature');
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+    background-color: #2b1313;
+}
+
+.navbar-toggler {
+    border: none;
+    padding-bottom: 2px;
+    font-size: 1.25em;
+}
+
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.offcanvas-body {
+    background-color: #2b1313;
+}
+
+.nav-link {
+    color: #917109;
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    font-family: 'Photograph Signature', sans-serif;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #741818;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: rgb(252, 212, 104);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    visibility: visible;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+.logo {
+    width: 130em;
+    align-items: center;
+    justify-content: center;
+    height: 20em;
+    padding-top: 0 auto;
+    margin: 0 auto;
+    
+}
+
+.logo a:hover {
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.container-fluid {
+    color: rgb(252, 212, 104);
+    height: 60px;
+    width: 100%;
+    position: sticky;
+}
+
+.navbar a:hover {
+    color:rgb(252, 212, 104);
+
+}
+
+.navbar li:hover {
+    transform: scale(1.1);
+    transition: 0, 3s;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: rgb(255, 255, 255);
+}
+
+
+.relative {
+    margin-right: 30px;
+    margin-top: 10px;
+
+}
